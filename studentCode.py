@@ -77,7 +77,7 @@ SQLAndNameTableCode = {
 		ON UPDATE CASCADE
 		ON DELETE RESTRICT,
 		CHECK (grade_level BETWEEN 0 AND 12)		
-	)"""	
+	)""",	
     "IoT_Device": """CREATE TABLE IF NOT EXISTS IoT_Device (
 	CREATE TABLE IoT_Device (
 		device_id     INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -111,7 +111,7 @@ SQLAndNameTableCode = {
 		FOREIGN KEY (course_id) REFERENCES Course(course_id)
 		ON UPDATE CASCADE
 		ON DELETE CASCADE		
-	)""",	
+	)"""	
 	
 }
 
@@ -135,4 +135,5 @@ sqlDataStatements = [
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('smart_board', 'Smart Board B202', 'active', 2, 2)",     
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('camera', 'Hallway Camera Main', 'inactive', 1, 2)",
 ]
+
 
