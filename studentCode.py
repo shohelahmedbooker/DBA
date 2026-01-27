@@ -125,9 +125,7 @@ sqlDataStatements = [
     f"INSERT INTO Student (first_name, last_name, date_of_birth, grade_level, enrollment_year) VALUES ('Emma', 'Johnson', '2012-03-15', 5, 2025)", 
     f"INSERT INTO Student (first_name, last_name, date_of_birth, grade_level, enrollment_year) VALUES ('Liam', 'Brown', '2011-07-22', 6, 2025)",
     f"INSERT INTO Course (course_name, subject, grade_level, academic_year, teacher_id, classroom_id) VALUES ('Advanced Math', 'Mathematics', 5, '2025-2026', 1, 1)",
-    f"INSERT INTO Course (course_name, subject, grade_level, academic_year, teacher_id, classroom_id) VALUES ('Earth Science', 'Science', 6, '2025-2026', 2, 2)",
-	f"INSERT INTO Student_Course (student_id, course_id) VALUES (1, 1)",
-    f"INSERT INTO Student_Course (student_id, course_id) VALUES (2, 2)",    
+    f"INSERT INTO Course (course_name, subject, grade_level, academic_year, teacher_id, classroom_id) VALUES ('Earth Science', 'Science', 6, '2025-2026', 2, 2)",   
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('smart_board', 'Smart Board A101', 'active', 1, 2)",
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('camera', 'Security Camera A101', 'active', 1, 3)",
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('speaker', 'PA Speaker B202', 'maintenance', 2, 3)",
@@ -136,6 +134,7 @@ sqlDataStatements = [
 	f"INSERT INTO  Student_Course (student_id, course_id) VALUES (1, 1)",
 	f"INSERT INTO  Student_Course (student_id, course_id) VALUES (2, 2)",
 ]
+
 
 
 
