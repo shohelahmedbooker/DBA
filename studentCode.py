@@ -131,9 +131,10 @@ sqlDataStatements = [
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('speaker', 'PA Speaker B202', 'maintenance', 2, 3)",
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('smart_board', 'Smart Board B202', 'active', 2, 2)",     
     f"INSERT INTO IoT_Device (device_type, device_name, status, classroom_id, admin_id) VALUES ('camera', 'Hallway Camera Main', 'inactive', 1, 2)",
-	f"INSERT INTO  Student_Course (student_id, course_id) VALUES (1, 1)",
-	f"INSERT INTO  Student_Course (student_id, course_id) VALUES (2, 2)",
+	f"INSERT INTO  Student_Course (student_id, course_id, enrolled_on) VALUES (1, 1, CURRENT_DATE) ON DUPLICATE KEY UPDATE enrolled_on = VALUES(enrolled_on)",
+	f"INSERT INTO  Student_Course (student_id, course_id, enrolled_on) VALUES (2, 2, CURRENT_DATE) ON DUPLICATE KEY UPDATE enrolled_on = VALUES(enrolled_on)",
 ]
+
 
 
 
