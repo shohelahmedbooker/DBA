@@ -115,6 +115,13 @@ SQLAndNameTableCode = {
 }
 
 sqlDataStatements = [
+    f"INSERT INTO Teacher (first_name, last_name, email, subject_area, hire_date) VALUES ('Sarah', 'Anderson', 's.anderson@school.edu', 'Mathematics', '2018-08-15')",
+    f"INSERT INTO Teacher (first_name, last_name, email, subject_area, hire_date) VALUES ('David', 'Miller', 'd.miller@school.edu', 'Science', '2020-01-10')",
+    f"INSERT INTO Classroom (room_number, building_name, grade_level, capacity) VALUES ('101', 'Main Building', 5, 30)",
+    f"INSERT INTO Classroom (room_number, building_name, grade_level, capacity) VALUES ('202', 'Science Wing', 6, 28)",
+	f"INSERT INTO School_Administrator (first_name, last_name, role, email) VALUES ('Michael', 'Reynolds', 'Principal', 'm.reynolds@school.edu')",
+    f"INSERT INTO School_Administrator (first_name, last_name, role, email) VALUES ('Laura', 'Chen', 'IT Administrator', 'l.chen@school.edu')",
+    f"INSERT INTO School_Administrator (first_name, last_name, role, email) VALUES ('Robert', 'Singh', 'Facilities Manager', 'r.singh@school.edu')",
     f"INSERT INTO Student (first_name, last_name, date_of_birth, grade_level, enrollment_year) VALUES ('Emma', 'Johnson', '2012-03-15', 5, 2025)", 
     f"INSERT INTO Student (first_name, last_name, date_of_birth, grade_level, enrollment_year) VALUES ('Liam', 'Brown', '2011-07-22', 6, 2025)",
     f"INSERT INTO Course (course_name, subject, grade_level, academic_year, teacher_id, classroom_id) VALUES ('Advanced Math', 'Mathematics', 5, '2025-2026', 1, 1)",
@@ -127,6 +134,7 @@ sqlDataStatements = [
 	f"INSERT INTO  Student_Course (student_id, course_id, enrolled_on) VALUES (1, 1, CURRENT_DATE) ON DUPLICATE KEY UPDATE enrolled_on = VALUES(enrolled_on)",
 	f"INSERT INTO  Student_Course (student_id, course_id, enrolled_on) VALUES (2, 2, CURRENT_DATE) ON DUPLICATE KEY UPDATE enrolled_on = VALUES(enrolled_on)",
 ]
+
 
 
 
